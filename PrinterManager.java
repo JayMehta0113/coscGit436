@@ -3,7 +3,7 @@ public class PrinterManager extends Printer{
     private Printer[] printers;
 
     private PrinterManager() {
-        printers = new Printer[3]; //we dont know how many printers we are managing, gave random value 10
+        printers = new Printer[3]; //we dont know how many printers we are managing, gave random value 3
         for(int i = 0; i < printers.length; i++) {
             printers[i] = new Printer();
         }
