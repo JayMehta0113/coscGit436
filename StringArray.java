@@ -1,9 +1,7 @@
 import java.util.*;
 
-/*
- * 6.
- * 7.
- */
+//6) The function public iterator iterator() is the function needed to implement the iterator. A new iterator is returned
+//9) New ArrayIterator is returned.
 
 public class StringArray implements Iterable <String>{
     
