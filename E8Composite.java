@@ -1,15 +1,8 @@
-/* I cannot get the sub directory elements to print so the output looks like this:
-Directory:Root
-file1.txt
-file2.txt
-Sub
-*/ 
-
 import java.util.ArrayList;
 
 interface AbstractFile {
 
-    static void ls(){};
+    public default void ls(){};
 
 }
 
@@ -19,6 +12,10 @@ class File implements AbstractFile{
 
     public File(String name){
         this.name=name;
+    }
+
+    public String toString(){
+        return name;
     }
 
     public void ls(){
@@ -41,11 +38,15 @@ class Directory implements AbstractFile{
         IncludedFiles.add(file);
     }
 
+    public String toString(){
+        return name;
+    }
+
     public void ls(){
         System.out.println("Directory:" + name);
 
         for(AbstractFile element : IncludedFiles){
-            System.out.println(element);
+            element.ls();
         }
 
     }
