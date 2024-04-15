@@ -1,3 +1,3 @@
 public interface Widget {
-    void draw();
+    public void draw();
 }
