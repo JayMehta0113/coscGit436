@@ -1,4 +1,4 @@
-package e14;
+package e14.btn;
 
 public interface Button {
     void render();

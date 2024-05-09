@@ -1,4 +1,4 @@
-package e14;
+package e14.btn;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

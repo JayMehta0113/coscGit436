@@ -1,6 +1,8 @@
 package e14;
 
-import java.awt.*;
+import e14.dialog.Dialog;
+import e14.dialog.HtmlDialog;
+import e14.dialog.WindowsDialog;
 
 public class Client {
     private static Dialog dialog;
